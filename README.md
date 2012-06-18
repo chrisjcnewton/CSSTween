@@ -1,4 +1,4 @@
-CSSTWEEN
+CSSTween
 ========
 
 A JavaScript library for Tweening DOM Objects using CSS transitions
