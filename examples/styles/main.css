@@ -1,0 +1,11 @@
+#block{
+	width:200px;
+	height:200px;
+	background-color:red;
+	position: absolute;
+	z-index: 10;
+}
+
+#car{
+	position: absolute;
+}
