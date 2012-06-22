@@ -2,16 +2,15 @@
 	window.onload = function () {
 		
 		var block = document.getElementById("block");
-		var car = document.getElementById("car");
 		
-		CSSTween.to(block,2, {x:300, y:500, scaleX:1.5, scaleY:1.5, rotation:150, 'opacity':0.1, 'background-color':'blue', ease:'ease-in-out', onComplete:callBack});
+		//CSSTween.to(block,2, {x:300, y:500, scaleX:1.5, scaleY:1.5, rotation:150, 'opacity':0.1, 'background-color':'blue', ease:'ease-in-out', onComplete:callBack});
 		
-		//block.style.position = "absolute";
 		
-
+		CSSTween.to(block,2, {x:300, y:500, scaleX:1.5, scaleY:1.5, rotation:180,  'backgroundColor':'blue', ease:'ease-in-out', onComplete:callBack});
+		
 		function callBack(){
-			console.log("Transition End!!!!");
-			CSSTween.to(car,2, {y:500, ease:'ease-in-out', onComplete:callBack2});
+			
+			CSSTween.to(block,3, {left:200,y:100, rotation:20, ease:'ease-in-out', onComplete:callBack2});
 		}
 		
 		function callBack2(){
